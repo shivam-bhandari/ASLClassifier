@@ -1,8 +1,6 @@
-# ecs171_final_project
-
 Google Colab link: https://colab.research.google.com/github/hirenpateldotdev/ecs171_final_project/blob/main/main.ipynb
 
-## Assignment 1 - Data exploration and preprocessing
+## Part 1 - Data exploration and preprocessing
 
 1. Our data consists of training and test images separated.
 Our dataset from kaggle.
@@ -24,7 +22,7 @@ Our dataset from kaggle.
 12. Our data is not standardized, hence we are standardizing it. We do this using letter = preprocessing.scale(letter)
 
 
-## Assignment 2 - First Model building and Evaluation
+## Part 2 - First Model building and Evaluation
 
 1. We first used a label binarizer. The label column was replaced (which had values between 1 and 24) with a column for each letter which is a 1 if that entry is the letter that the column represents else 0.
 2. We first scale our pixel values by dividing each value by 255. ( Pixel values range from 0-255).
@@ -37,8 +35,6 @@ Our dataset from kaggle.
 9. As we see in the graph, we see an underfitting. Our model performs well on the training set but not on the test set.
 
 We seek to improve our model. Our next approach might be a CNN with more layers. The cause for an underfitting maybe that the model is too simple.
-
-## Final Submission
 
 ### Introduction:
 Let’s talk about our project, an American Sign Language recognizer. American Sign Language (ASL) is a language expressed by hand and face movements. Sign language is an essential tool to bridge the communication gap between normal and hearing-impaired people. It is the primary language of many North Americans who are deaf and hard of hearing and is used by many hearing people. Sign Language interpreters interpret ASL in the English language, however, there is a scarcity of interpreters. Therefore, the need for a technology-based system is apparent. It is also a project for social good which is why it was chosen.
@@ -181,16 +177,3 @@ To improve our model, we made our second model be a CNN with more layers. We tra
 
 ### Conclusion:
 We did a neural network analysis on hand signs from the MNIST kaggle dataset. Before building the actual model we did a bunch of data processing and preprocessing on the datasets. We then built a very basic model with a few layers and modified that to our final model which gave us the best accuracy. We ended up with an accuracy of: 99.8%. Overall we enjoyed brainstorming about different ideas and ML projects to work on and found this one to be very interesting. In the future we could probably try a dataset with different images, for example taking the picture in different lightings and experimenting with that to see if we can train the model better.
-
-### Collabration:
-We worked as a team and divided the tasks equally among ourselves to complete the assignment.
-
-Bhavi Patel: worked on preprocessing, printing the image for each letter and on the models along with Hiren.
-
-Dorothy Le: Evaluated the models for its accuracy
-
-Shivam Bhandari: Worked on the introduction of the project and worked on updating README with trishna and the infographics.
-
-Hiren Patel: worked on creating data visualisation for the data exploration and implementing the various iteration of CNN models with Bhavi
-
-Trishna Sharma: Worked on creating figures, graphs, and added explanations to the code to Google Colab and worked on updating README with Shivam and the team.
